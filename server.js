@@ -48,3 +48,5 @@ function determineWeight(currentWeight)
             console.log("error");
     }
 }
+
+module.exports = { isNumeric, determineWeight}

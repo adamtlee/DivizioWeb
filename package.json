@@ -1,0 +1,24 @@
+{
+  "name": "divizioweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamtlee/DivizioWeb.git"
+  },
+  "author": "Adam Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamtlee/DivizioWeb/issues"
+  },
+  "homepage": "https://github.com/adamtlee/DivizioWeb#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5"
+  }
+}
