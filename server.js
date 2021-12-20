@@ -12,48 +12,39 @@ function isNumeric(n)
 
 function determineWeight(currentWeight)
 {
-    if (currentWeight < 0)
+    switch(true)
     {
-        console.log("The weight entered is below 0");
-    }
-    else if(currentWeight <= 115)
-    {
-        console.log("Strawweight");
-    }
-    else if(currentWeight <= 125 && currentWeight > 115)
-    {
-        console.log("Flyweight");
-    }
-    else if(currentWeight > 125 && currentWeight <= 135)
-    {
-        console.log("Bantamweight");
-    }
-    else if (currentWeight > 135 && currentWeight <= 145)
-    {
-        console.log("Featherweight");
-    }
-    else if (currentWeight > 145 && currentWeight <= 155)
-    {
-        console.log("Lightweight");
-    }
-    else if (currentWeight > 155 && currentWeight <= 170)
-    {
-        console.log("Welterweight");
-    }
-    else if (currentWeight > 170 && currentWeight <= 185)
-    {
-        console.log("Middleweight");
-    }
-    else if (currentWeight > 185 && currentWeight <= 205)
-    {
-        console.log("Light Heavyweight");
-    }
-    else if (currentWeight > 265)
-    {
-        console.log("Heavyweight");
-    }
-    else
-    {
-        console.log("error.");
+        case (currentWeight < 0):
+            console.log("The weight entered is below 0");
+            break; 
+        case (currentWeight <= 115):
+            console.log("Strawweight");
+            break;
+        case (currentWeight <= 125 && currentWeight > 115):
+            console.log("Flyweight");
+            break;
+        case(currentWeight > 125 && currentWeight <= 135):
+            console.log("Bantamweight");
+            break;
+        case(currentWeight > 135 && currentWeight <= 145):
+            console.log("Featherweight");
+            break; 
+        case(currentWeight > 145 && currentWeight <= 155):
+            console.log("Lightweight");
+            break;
+        case(currentWeight > 155 && currentWeight <= 170):
+            console.log("Welterweight");
+            break; 
+        case(currentWeight > 170 && currentWeight <= 185):
+            console.log("Middleweight");
+            break;
+        case(currentWeight > 185 && currentWeight <= 205):
+            console.log("Light Heavyweight");
+            break; 
+        case(currentWeight > 265):
+            console.log("Heavyweight");
+            break; 
+        default: 
+            console.log("error");
     }
 }
